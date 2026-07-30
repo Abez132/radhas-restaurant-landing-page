@@ -10,8 +10,14 @@ body {
   @apply bg-cream text-charcoal font-body;
 }
 
+/* Amharic glyphs run taller/denser than Latin — give them more breathing room */
+:lang(am) {
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+
 ::selection {
-  @apply bg-gold/30 text-maroon-deep;
+  @apply bg-saffron/30 text-maroon-deep;
 }
 
 /* Scroll reveal */
@@ -46,31 +52,13 @@ body {
 
 /* Section eyebrow */
 .eyebrow {
-  @apply font-body uppercase tracking-[0.3em] text-xs text-gold-deep font-semibold;
-}
-
-/* Gold hairline divider with center ornament */
-.kalka-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.kalka-divider::before,
-.kalka-divider::after {
-  content: "";
-  height: 1px;
-  width: 56px;
-  background: linear-gradient(90deg, transparent, #D4AF37);
-}
-.kalka-divider::after {
-  background: linear-gradient(90deg, #D4AF37, transparent);
+  @apply font-body uppercase tracking-[0.3em] text-xs text-saffron-deep font-semibold;
 }
 
 /* Custom focus ring for accessibility */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #D4AF37;
+  outline: 2px solid #EB6E0F;
   outline-offset: 3px;
 }
 

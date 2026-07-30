@@ -1,7 +1,12 @@
-import { business } from "@/lib/data";
+"use client";
+
+import { useLanguage } from "@/lib/i18n";
 import { PaisleyField, KalkaDivider } from "./Ornaments";
 
 export default function Hero() {
+  const { t, lang } = useLanguage();
+  const ethiopic = lang === "am" ? "font-ethiopic" : "";
+
   return (
     <section
       id="home"
@@ -12,23 +17,21 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle at 50% 20%, rgba(212,175,55,0.16), transparent 55%)",
+            "radial-gradient(circle at 50% 20%, rgba(235,110,15,0.18), transparent 55%)",
         }}
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center px-6 pt-28 text-center">
-        <p className="font-ethiopic text-sm tracking-wide text-gold-soft animate-fade-in-up">
-          እንኳን ደህና መጡ &mdash; Welcome
+      <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center px-6 pt-28 text-center" lang={lang}>
+        <p className={`text-sm tracking-wide text-saffron-soft animate-fade-in-up ${ethiopic}`}>
+          {t.hero.eyebrow}
         </p>
 
         <h1
-          className="mt-5 font-display text-4xl leading-tight text-white text-shadow-soft animate-fade-in-up sm:text-5xl md:text-6xl"
+          className={`mt-5 font-display text-4xl leading-tight text-white text-shadow-soft animate-fade-in-up sm:text-5xl md:text-6xl ${ethiopic}`}
           style={{ animationDelay: "0.15s", animationFillMode: "backwards" }}
         >
-          Authentic Indian Flavors
-          <br />
-          in the Heart of Addis Ababa
+          {t.hero.headline}
         </h1>
 
         <div
@@ -39,12 +42,10 @@ export default function Hero() {
         </div>
 
         <p
-          className="mt-6 max-w-xl text-balance text-base text-cream/90 animate-fade-in-up sm:text-lg"
+          className={`mt-6 max-w-xl text-balance text-base text-cream/90 animate-fade-in-up sm:text-lg ${ethiopic}`}
           style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}
         >
-          Hand-ground spice, tandoor-fired classics, and warm hospitality —
-          crafted for family dinners, business lunches, and everything worth
-          celebrating.
+          {t.hero.sub}
         </p>
 
         <div
@@ -53,15 +54,15 @@ export default function Hero() {
         >
           <a
             href="#visit"
-            className="w-full rounded-full bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-maroon-deep transition-transform duration-300 hover:scale-[1.03] hover:bg-gold-soft sm:w-auto"
+            className={`w-full rounded-full bg-saffron px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-transform duration-300 hover:scale-[1.03] hover:bg-saffron-deep sm:w-auto ${ethiopic}`}
           >
-            Reserve Your Table
+            {t.hero.cta1}
           </a>
           <a
             href="#menu"
-            className="w-full rounded-full border border-white/40 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:border-gold hover:text-gold-soft sm:w-auto"
+            className={`w-full rounded-full border border-white/40 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-colors duration-300 hover:border-saffron hover:text-saffron-soft sm:w-auto ${ethiopic}`}
           >
-            View Our Menu
+            {t.hero.cta2}
           </a>
         </div>
 
@@ -69,21 +70,19 @@ export default function Hero() {
           className="mt-14 flex items-center gap-3 text-cream/80 animate-fade-in-up"
           style={{ animationDelay: "0.7s", animationFillMode: "backwards" }}
         >
-          <span className="flex items-center gap-1 text-gold">
+          <span className="flex items-center gap-1 text-saffron">
             {"★★★★★".split("").map((s, i) => (
               <span key={i}>{s}</span>
             ))}
           </span>
-          <span className="text-sm">
-            {business.rating} · {business.reviewCount} Google Reviews
-          </span>
+          <span className={`text-sm ${ethiopic}`}>{t.hero.ratingLine}</span>
         </div>
       </div>
 
       <a
         href="#about"
         aria-label="Scroll to About section"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float text-gold-soft/80"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float text-saffron-soft/80"
       >
         <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
           <rect x="1" y="1" width="20" height="32" rx="10" stroke="currentColor" strokeWidth="1.3" />

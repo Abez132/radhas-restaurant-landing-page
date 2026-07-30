@@ -30,9 +30,9 @@ export function Paisley({ className = "", strokeWidth = 1.4 }: { className?: str
 export function KalkaDivider({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center justify-center gap-4 ${className}`} aria-hidden="true">
-      <span className="h-px w-14 bg-gradient-to-r from-transparent to-gold" />
-      <Paisley className="h-6 w-5 text-gold rotate-90" strokeWidth={2} />
-      <span className="h-px w-14 bg-gradient-to-l from-transparent to-gold" />
+      <span className="h-px w-14 bg-gradient-to-r from-transparent to-saffron" />
+      <Paisley className="h-6 w-5 text-saffron rotate-90" strokeWidth={2} />
+      <span className="h-px w-14 bg-gradient-to-l from-transparent to-saffron" />
     </div>
   );
 }
@@ -51,7 +51,7 @@ export function PaisleyField({ className = "" }: { className?: string }) {
       {positions.map((p, i) => (
         <Paisley
           key={i}
-          className="absolute text-gold"
+          className="absolute text-saffron"
           strokeWidth={1}
           {...{
             style: {

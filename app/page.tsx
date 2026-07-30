@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import InsiderTips from "@/components/InsiderTips";
 import About from "@/components/About";
 import SignatureDishes from "@/components/SignatureDishes";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <InsiderTips />
       <About />
       <SignatureDishes />
       <WhyChooseUs />
