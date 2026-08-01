@@ -27,18 +27,20 @@ npm run start
 | Logo | Real — cropped from the restaurant's own Instagram (`@radhasres2025`) |
 | Brand colors | Sampled directly from the logo's actual pixels (saffron, leaf green, deep maroon) |
 | Address, phone, email, hours | Real — confirmed via the restaurant's Tripadvisor listing |
-| Menu items & prices | Real — sourced from a public TikTok menu post |
+| Menu items | Real — 8 dishes with real photography, sourced from the restaurant's own Instagram posts (Fish Curry/Masala/Tikka, Mutton Rogan Josh, Paneer Bhurji, Chicken Lollypop, Samosa Chaat, Chicken Manchow Soup, Chicken Hot & Sour Soup, Bowl of Happiness) |
+| Menu prices | Real where confirmed (Tandoori specialties, Chicken Biryani, Mango Lassi — from a public TikTok menu post); not fabricated for the 8 photographed dishes above, since no price was publicly confirmed for those |
 | Review quotes | Real — lightly excerpted from public Tripadvisor reviews, each attributed to its actual author |
 | "Insider tips" ticker | Real details pulled from guest reviews (Monday game night, jazz bar, staff-recommended dishes, valet parking) |
-| Gallery photos | **Placeholder** — no stock or lifted photos are bundled; see note below |
+| Gallery | Real — the same 8 Instagram dish photos, presented as an "As Seen on Instagram" grid linking to `@radhasres2025` |
 | Amharic translations | AI-drafted, not yet reviewed by a native speaker — see note below |
 
 ## ⚠️ Before this goes out as a pitch
 
-Two things the program's own workflow guide calls out as required, which an AI pass cannot finish on its own:
+One thing the program's own workflow guide calls out as required, which an AI pass cannot finish on its own:
 
-1. **Amharic review** — every Amharic string lives in `lib/i18n.tsx` under the `am` key. A native speaker needs to read it live on the site (not just in the file) and correct anything stiff or off before outreach.
-2. **Real photography** — the Gallery section currently uses decorative placeholder tiles. Drop the restaurant's own public photos into `public/images/gallery/` and swap them in per the instructions in `components/Gallery.tsx`.
+- **Amharic review** — every Amharic string lives in `lib/i18n.tsx` under the `am` key. A native speaker needs to read it live on the site (not just in the file) and correct anything stiff or off before outreach.
+
+Photography is no longer a placeholder: the menu and gallery both use the restaurant's own real Instagram photos (see `public/images/dishes/`). If Radha's has higher-resolution originals of these (or wants different dishes featured), swap the files in that folder — filenames are referenced directly in `lib/i18n.tsx`.
 
 ## Project structure
 
@@ -55,7 +57,7 @@ components/
   SignatureDishes.tsx     Real menu items + prices, steam-rise animation
   WhyChooseUs.tsx         8-point USP grid sourced from Tripadvisor's feature list
   Reviews.tsx             Real, attributed guest quotes
-  Gallery.tsx             Placeholder gallery grid — swap in real photos before pitching
+  Gallery.tsx             Real Instagram photo grid, links to @radhasres2025
   ReservationCTA.tsx      Full-width maroon CTA band
   LocationSection.tsx     Address/phone/email/hours + embedded Google Map
   Footer.tsx              Real logo, real contact details, Instagram link

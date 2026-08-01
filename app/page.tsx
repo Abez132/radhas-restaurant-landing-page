@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <InsiderTips />
+      {/* <InsiderTips /> */}
       <About />
       <SignatureDishes />
       <WhyChooseUs />

@@ -66,7 +66,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div
+        {/* <div
           className="mt-14 flex items-center gap-3 text-cream/80 animate-fade-in-up"
           style={{ animationDelay: "0.7s", animationFillMode: "backwards" }}
         >
@@ -76,10 +76,10 @@ export default function Hero() {
             ))}
           </span>
           <span className={`text-sm ${ethiopic}`}>{t.hero.ratingLine}</span>
-        </div>
+        </div> */}
       </div>
 
-      <a
+      {/* <a
         href="#about"
         aria-label="Scroll to About section"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float text-saffron-soft/80"
@@ -88,7 +88,7 @@ export default function Hero() {
           <rect x="1" y="1" width="20" height="32" rx="10" stroke="currentColor" strokeWidth="1.3" />
           <circle cx="11" cy="10" r="2" fill="currentColor" />
         </svg>
-      </a>
+      </a> */}
     </section>
   );
 }
