@@ -29,7 +29,15 @@ export const business = {
  */
 export const content = {
   en: {
-    nav: { about: "About", menu: "Menu", whyUs: "Why Us", reviews: "Reviews", gallery: "Gallery", visit: "Visit", reserve: "Reserve a Table" },
+    nav: {
+      about: "About",
+      menu: "Menu",
+      whyUs: "Why Us",
+      reviews: "Reviews",
+      gallery: "Gallery",
+      visit: "Visit",
+      reserve: "Reserve a Table",
+    },
     hero: {
       eyebrow: "Welcome to Radha's",
       headline: "Authentic Indian Flavors in the Heart of Addis Ababa",
@@ -62,36 +70,42 @@ export const content = {
     dishes: {
       eyebrow: "Signature Dishes",
       title: "Flavors Worth the Table",
-      footnote: "A sample of what's on the table. Confirmed starting prices: Tandoori specialties from 1,599 Birr · Chicken Biryani 849 Birr · Mango Lassi 399 Birr — ask your server for the full menu.",
+      footnote:
+        "A sample of what's on the table. Confirmed starting prices: Tandoori specialties from 1,599 Birr · Chicken Biryani 849 Birr · Mango Lassi 399 Birr — ask your server for the full menu.",
       items: [
         {
           title: "Fish Curry, Masala & Tikka",
           tag: "Chef's Trio",
-          description: "Three ways with fish — a fiery curry, a smoky masala, and char-grilled tikka, all on one table.",
+          description:
+            "Three ways with fish — a fiery curry, a smoky masala, and char-grilled tikka, all on one table.",
           image: "/images/dishes/fish-curry-masala-tikka.jpg",
         },
         {
           title: "Mutton Rogan Josh",
           tag: "Best Seller",
-          description: "Slow-braised mutton in a rich, aromatic Kashmiri red curry.",
+          description:
+            "Slow-braised mutton in a rich, aromatic Kashmiri red curry.",
           image: "/images/dishes/mutton-rogan-josh.jpg",
         },
         {
           title: "Paneer Bhurji",
           tag: "Vegetarian",
-          description: "Scrambled paneer with onions, tomatoes, and warm spice — comfort food, done right.",
+          description:
+            "Scrambled paneer with onions, tomatoes, and warm spice — comfort food, done right.",
           image: "/images/dishes/paneer-bhurji.jpg",
         },
         {
           title: "Chicken Lollypop",
           tag: "Starter Favorite",
-          description: "Frenched chicken drumettes, marinated and wok-fried Indo-Chinese style.",
+          description:
+            "Frenched chicken drumettes, marinated and wok-fried Indo-Chinese style.",
           image: "/images/dishes/chicken-lollypop.jpg",
         },
         {
           title: "Samosa Chaat",
           tag: "Guest Favorite",
-          description: "Crisp samosas steamed and topped with chutneys, yogurt, and pomegranate.",
+          description:
+            "Crisp samosas steamed and topped with chutneys, yogurt, and pomegranate.",
           image: "/images/dishes/samosa-chaat.jpg",
         },
         {
@@ -103,13 +117,15 @@ export const content = {
         {
           title: "Chicken Hot & Sour Soup",
           tag: "Indo-Chinese",
-          description: "A warming broth of chicken, mushroom, and fresh chili — built for Addis evenings.",
+          description:
+            "A warming broth of chicken, mushroom, and fresh chili — built for Addis evenings.",
           image: "/images/dishes/chicken-hot-sour-soup.jpg",
         },
         {
           title: "Bowl of Happiness",
           tag: "House Special",
-          description: "Our own name for it — tender kofta in a silky, cream-swirled tomato gravy.",
+          description:
+            "Our own name for it — tender kofta in a silky, cream-swirled tomato gravy.",
           image: "/images/dishes/bowl-of-happiness.jpg",
         },
       ],
@@ -118,14 +134,46 @@ export const content = {
       eyebrow: "Why Choose Us",
       title: "Hospitality First, Always",
       items: [
-        { title: "Authentic Indian Chefs", description: "Recipes carried from home kitchens across India, not adapted for anyone." },
-        { title: "Equal Care, Both Menus", description: "A full vegetarian and vegan menu that gets the same attention as the rest." },
-        { title: "Full Bar & Jazz Nights", description: "Cocktails, live music, and big-screen sports evenings at the bar." },
-        { title: "Private Dining Rooms", description: "Intimate spaces for celebrations, diplomatic dinners, and business meetings." },
-        { title: "Free Parking & Valet", description: "Off-street, street, and valet parking — arriving is never the hard part." },
-        { title: "Wheelchair Accessible & Dog Friendly", description: "A dining room that welcomes everyone, four-legged guests included." },
-        { title: "Free Wifi, Delivery & Takeout", description: "Built for the business-lunch crowd as much as the sit-down dinner." },
-        { title: "Trusted by the Diplomatic Community", description: "A known favorite among Addis Ababa's diplomats and expatriates." },
+        {
+          title: "Authentic Indian Chefs",
+          description:
+            "Recipes carried from home kitchens across India, not adapted for anyone.",
+        },
+        {
+          title: "Equal Care, Both Menus",
+          description:
+            "A full vegetarian and vegan menu that gets the same attention as the rest.",
+        },
+        {
+          title: "Full Bar & Jazz Nights",
+          description:
+            "Cocktails, live music, and big-screen sports evenings at the bar.",
+        },
+        {
+          title: "Private Dining Rooms",
+          description:
+            "Intimate spaces for celebrations, diplomatic dinners, and business meetings.",
+        },
+        {
+          title: "Free Parking & Valet",
+          description:
+            "Off-street, street, and valet parking — arriving is never the hard part.",
+        },
+        {
+          title: "Wheelchair Accessible & Dog Friendly",
+          description:
+            "A dining room that welcomes everyone, four-legged guests included.",
+        },
+        {
+          title: "Free Wifi, Delivery & Takeout",
+          description:
+            "Built for the business-lunch crowd as much as the sit-down dinner.",
+        },
+        {
+          title: "Trusted by the Diplomatic Community",
+          description:
+            "A known favorite among Addis Ababa's diplomats and expatriates.",
+        },
       ],
     },
     reviews: {
@@ -133,12 +181,40 @@ export const content = {
       title: "What Addis Ababa Is Saying",
       subtitle: `${business.rating} average from ${business.reviewCount} ${business.reviewSource} reviews`,
       items: [
-        { quote: "The only Indian fine-dine restaurant in Ethiopia — and it shows in every dish.", author: "Ravi K.", stars: 5 },
-        { quote: "Amazing ambiance, great atmosphere and lovely food.", author: "Kajal D.", stars: 5 },
-        { quote: "Best place for a business lunch or dinner — mouth-watering, generous portions.", author: "Sandeep M.", stars: 5 },
-        { quote: "A personal dining room, dim light, and wine — dinner here feels special.", author: "Sifen N.", stars: 5 },
-        { quote: "Very good place for a family get-together, start to finish.", author: "Makbel D.", stars: 5 },
-        { quote: "Laid-back, with Indian music playing and a Monday game night for the international crowd.", author: "Roger the Bard", stars: 4 },
+        {
+          quote:
+            "The only Indian fine-dine restaurant in Ethiopia — and it shows in every dish.",
+          author: "Ravi K.",
+          stars: 5,
+        },
+        {
+          quote: "Amazing ambiance, great atmosphere and lovely food.",
+          author: "Kajal D.",
+          stars: 5,
+        },
+        {
+          quote:
+            "Best place for a business lunch or dinner — mouth-watering, generous portions.",
+          author: "Sandeep M.",
+          stars: 5,
+        },
+        {
+          quote:
+            "A personal dining room, dim light, and wine — dinner here feels special.",
+          author: "Sifen N.",
+          stars: 5,
+        },
+        {
+          quote: "Very good place for a family get-together, start to finish.",
+          author: "Makbel D.",
+          stars: 5,
+        },
+        {
+          quote:
+            "Laid-back, with Indian music playing and a Monday game night for the international crowd.",
+          author: "Roger the Bard",
+          stars: 4,
+        },
       ],
     },
     gallery: {
@@ -147,14 +223,32 @@ export const content = {
       subtitle: `Real posts from ${business.instagram} — follow along for daily specials.`,
       cta: "Follow @radhasres2025",
       items: [
-        { label: "Fish Curry, Masala & Tikka", image: "/images/dishes/fish-curry-masala-tikka.jpg" },
-        { label: "Mutton Rogan Josh", image: "/images/dishes/mutton-rogan-josh.jpg" },
+        {
+          label: "Fish Curry, Masala & Tikka",
+          image: "/images/dishes/fish-curry-masala-tikka.jpg",
+        },
+        {
+          label: "Mutton Rogan Josh",
+          image: "/images/dishes/mutton-rogan-josh.jpg",
+        },
         { label: "Paneer Bhurji", image: "/images/dishes/paneer-bhurji.jpg" },
-        { label: "Chicken Lollypop", image: "/images/dishes/chicken-lollypop.jpg" },
+        {
+          label: "Chicken Lollypop",
+          image: "/images/dishes/chicken-lollypop.jpg",
+        },
         { label: "Samosa Chaat", image: "/images/dishes/samosa-chaat.jpg" },
-        { label: "Chicken Manchow Soup", image: "/images/dishes/chicken-manchow-soup.jpg" },
-        { label: "Chicken Hot & Sour Soup", image: "/images/dishes/chicken-hot-sour-soup.jpg" },
-        { label: "Bowl of Happiness", image: "/images/dishes/bowl-of-happiness.jpg" },
+        {
+          label: "Chicken Manchow Soup",
+          image: "/images/dishes/chicken-manchow-soup.jpg",
+        },
+        {
+          label: "Chicken Hot & Sour Soup",
+          image: "/images/dishes/chicken-hot-sour-soup.jpg",
+        },
+        {
+          label: "Bowl of Happiness",
+          image: "/images/dishes/bowl-of-happiness.jpg",
+        },
       ],
     },
     cta: {
@@ -178,13 +272,26 @@ export const content = {
       navigate: "Navigate",
       contact: "Contact",
       services: "Services",
-      serviceList: ["Private Dining", "Full Bar & Jazz Nights", "Business Lunches", "Delivery & Takeout"],
+      serviceList: [
+        "Private Dining",
+        "Full Bar & Jazz Nights",
+        "Business Lunches",
+        "Delivery & Takeout",
+      ],
       rights: "All rights reserved.",
     },
     langToggle: "አማርኛ",
   },
   am: {
-    nav: { about: "ስለ እኛ", menu: "ምናሌ", whyUs: "ለምን እኛን", reviews: "አስተያየቶች", gallery: "ማዕከለ-ስዕላት", visit: "ይጎብኙን", reserve: "ጠረጴዛ ያስይዙ" },
+    nav: {
+      about: "ስለ እኛ",
+      menu: "ምናሌ",
+      whyUs: "ለምን እኛን",
+      reviews: "አስተያየቶች",
+      gallery: "ማዕከለ-ስዕላት",
+      visit: "ይጎብኙን",
+      reserve: "ጠረጴዛ ያስይዙ",
+    },
     hero: {
       eyebrow: "ወደ ራድሃስ እንኳን በደህና መጡ",
       headline: "ኦሪጅናል የህንድ ጣዕም በአዲስ አበባ ልብ ውስጥ",
@@ -200,7 +307,7 @@ export const content = {
       p2: "እንግዶች ይህንን በአዲስ አበባ ብቸኛ እውነተኛ የህንድ ምግብ ቤት ተሞክሮ አድርገው ይገልጹታል — በዲፕሎማት ማህበረሰብ፣ በንግድ ጎብኚዎች እና በቤተሰቦች ዘንድ ተወዳጅ ስትሆን፣ ለልዩ አጋጣሚዎች የግል ማዕድ ቤቶችም አሏት።",
       statRatingValue: `${business.rating}★`,
       statRatingLabel: `${business.reviewCount} የ${business.reviewSource} አስተያየቶች`,
-      statHoursValue: "9:00 ጠዋት–11:00 ማታ",
+      statHoursValue: "3:00 ጠዋት–5:00 ማታ",
       statHoursLabel: "በየቀኑ ክፍት",
       quote: "«አስደናቂ ድባብ፣ ግሩም ሁኔታ እና ጣፋጭ ምግብ።»",
       quoteSource: `— የ${business.reviewSource} እንግዳ`,
@@ -217,12 +324,14 @@ export const content = {
     dishes: {
       eyebrow: "ልዩ ምግቦቻችን",
       title: "ጠረጴዛው የሚገባው ጣዕም",
-      footnote: "ከምናሌያችን ናሙና። የተረጋገጡ መነሻ ዋጋዎች፦ የታንዱር ልዩ ምግቦች ከ1,599 ብር · የዶሮ ቢርያኒ 849 ብር · ማንጎ ላሲ 399 ብር — ሙሉ ምናሌውን ከአስተናጋጅዎ ይጠይቁ።",
+      footnote:
+        "ከምናሌያችን ናሙና። የተረጋገጡ መነሻ ዋጋዎች፦ የታንዱር ልዩ ምግቦች ከ1,599 ብር · የዶሮ ቢርያኒ 849 ብር · ማንጎ ላሲ 399 ብር — ሙሉ ምናሌውን ከአስተናጋጅዎ ይጠይቁ።",
       items: [
         {
           title: "የዓሳ ወጥ፣ ማሳላ እና ቲካ",
           tag: "የሼፍ ሶስትዮሽ",
-          description: "በሶስት መንገድ የተዘጋጀ ዓሳ — ትኩስ ወጥ፣ ጭስ ጣዕም ያለው ማሳላ እና በእሳት የተጠበሰ ቲካ በአንድ ጠረጴዛ ላይ።",
+          description:
+            "በሶስት መንገድ የተዘጋጀ ዓሳ — ትኩስ ወጥ፣ ጭስ ጣዕም ያለው ማሳላ እና በእሳት የተጠበሰ ቲካ በአንድ ጠረጴዛ ላይ።",
           image: "/images/dishes/fish-curry-masala-tikka.jpg",
         },
         {
@@ -234,7 +343,8 @@ export const content = {
         {
           title: "ፓኒር ቡርጂ",
           tag: "የአትክልት ምግብ",
-          description: "የተፈጨ ፓኒር ከሽንኩርት፣ ከቲማቲም እና ከቅመማ ቅመም ጋር — ትክክለኛ የምቾት ምግብ።",
+          description:
+            "የተፈጨ ፓኒር ከሽንኩርት፣ ከቲማቲም እና ከቅመማ ቅመም ጋር — ትክክለኛ የምቾት ምግብ።",
           image: "/images/dishes/paneer-bhurji.jpg",
         },
         {
@@ -273,14 +383,38 @@ export const content = {
       eyebrow: "ለምን እኛን ይምረጡ",
       title: "እንግዳ አቀባበል ሁልጊዜ ቅድሚያ",
       items: [
-        { title: "ኦሪጅናል የህንድ ሼፎች", description: "ከህንድ የቤት ኩሽናዎች የመጡ የምግብ አዘገጃጀቶች፣ ላልተለወጠ ጣዕም።" },
-        { title: "እኩል እንክብካቤ ለሁለቱም ምናሌዎች", description: "ሙሉ የአትክልትና የቬጋን ምናሌ ልክ እንደ ሌላው ትኩረት ያገኛል።" },
-        { title: "ሙሉ ባር እና የጃዝ ምሽቶች", description: "ኮክቴሎች፣ ቀጥታ ሙዚቃ እና በትልቅ ስክሪን የስፖርት ምሽቶች።" },
-        { title: "የግል ማዕድ ቤቶች", description: "ለበዓላት፣ ለዲፕሎማሲያዊ እራት እና ለንግድ ስብሰባዎች የተመቻቹ ቦታዎች።" },
-        { title: "ነጻ የመኪና ማቆሚያ እና ቫሌት", description: "የውጪ፣ የመንገድ ዳር እና የቫሌት ማቆሚያ — መድረስ አስቸጋሪ አይደለም።" },
-        { title: "ተሽከርካሪ ወንበር ምቹ እና ውሻ ተቀባይ", description: "ሁሉንም እንግዳ የሚቀበል ምግብ ቤት፣ የቤት እንስሳትን ጨምሮ።" },
-        { title: "ነጻ ዋይፋይ፣ ማድረስ እና ውሰድ", description: "ለንግድ ምሳ ሰዓት እንደ እራት ራሱ ተስማሚ።" },
-        { title: "በዲፕሎማሲያዊ ማህበረሰብ የታመነ", description: "በአዲስ አበባ ዲፕሎማቶች እና የውጪ ዜጎች ዘንድ የታወቀ ተመራጭ።" },
+        {
+          title: "ኦሪጅናል የህንድ ሼፎች",
+          description: "ከህንድ የቤት ኩሽናዎች የመጡ የምግብ አዘገጃጀቶች፣ ላልተለወጠ ጣዕም።",
+        },
+        {
+          title: "እኩል እንክብካቤ ለሁለቱም ምናሌዎች",
+          description: "ሙሉ የአትክልትና የቬጋን ምናሌ ልክ እንደ ሌላው ትኩረት ያገኛል።",
+        },
+        {
+          title: "ሙሉ ባር እና የጃዝ ምሽቶች",
+          description: "ኮክቴሎች፣ ቀጥታ ሙዚቃ እና በትልቅ ስክሪን የስፖርት ምሽቶች።",
+        },
+        {
+          title: "የግል ማዕድ ቤቶች",
+          description: "ለበዓላት፣ ለዲፕሎማሲያዊ እራት እና ለንግድ ስብሰባዎች የተመቻቹ ቦታዎች።",
+        },
+        {
+          title: "ነጻ የመኪና ማቆሚያ እና ቫሌት",
+          description: "የውጪ፣ የመንገድ ዳር እና የቫሌት ማቆሚያ — መድረስ አስቸጋሪ አይደለም።",
+        },
+        {
+          title: "ተሽከርካሪ ወንበር ምቹ እና ውሻ ተቀባይ",
+          description: "ሁሉንም እንግዳ የሚቀበል ምግብ ቤት፣ የቤት እንስሳትን ጨምሮ።",
+        },
+        {
+          title: "ነጻ ዋይፋይ፣ ማድረስ እና ውሰድ",
+          description: "ለንግድ ምሳ ሰዓት እንደ እራት ራሱ ተስማሚ።",
+        },
+        {
+          title: "በዲፕሎማሲያዊ ማህበረሰብ የታመነ",
+          description: "በአዲስ አበባ ዲፕሎማቶች እና የውጪ ዜጎች ዘንድ የታወቀ ተመራጭ።",
+        },
       ],
     },
     reviews: {
@@ -288,12 +422,28 @@ export const content = {
       title: "አዲስ አበባ ምን ትላለች",
       subtitle: `${business.rating} አማካይ ከ${business.reviewCount} የ${business.reviewSource} አስተያየቶች`,
       items: [
-        { quote: "በኢትዮጵያ ብቸኛው እውነተኛ የህንድ ምግብ ቤት — ይህም በእያንዳንዱ ምግብ ውስጥ ይታያል።", author: "ራቪ ኬ.", stars: 5 },
+        {
+          quote: "በኢትዮጵያ ብቸኛው እውነተኛ የህንድ ምግብ ቤት — ይህም በእያንዳንዱ ምግብ ውስጥ ይታያል።",
+          author: "ራቪ ኬ.",
+          stars: 5,
+        },
         { quote: "አስደናቂ ድባብ፣ ግሩም ሁኔታ እና ጣፋጭ ምግብ።", author: "ካጃል ዲ.", stars: 5 },
-        { quote: "ለንግድ ምሳ ወይም እራት ምርጥ ቦታ — ጣፋጭ እና በቂ መጠን ያለው ምግብ።", author: "ሳንዲፕ ኤም.", stars: 5 },
-        { quote: "የግል ማዕድ ቤት፣ ደብዛዛ ብርሃን እና ወይን — እራቱ ልዩ ስሜት ይሰጣል።", author: "ሲፈን ኤን.", stars: 5 },
+        {
+          quote: "ለንግድ ምሳ ወይም እራት ምርጥ ቦታ — ጣፋጭ እና በቂ መጠን ያለው ምግብ።",
+          author: "ሳንዲፕ ኤም.",
+          stars: 5,
+        },
+        {
+          quote: "የግል ማዕድ ቤት፣ ደብዛዛ ብርሃን እና ወይን — እራቱ ልዩ ስሜት ይሰጣል።",
+          author: "ሲፈን ኤን.",
+          stars: 5,
+        },
         { quote: "ለቤተሰብ መሰባሰቢያ በጣም ጥሩ ቦታ ነው።", author: "መቅበል ዲ.", stars: 5 },
-        { quote: "ዘና ያለ ድባብ፣ የህንድ ሙዚቃ እና ለዓለም አቀፍ ጎብኚዎች የሰኞ ጨዋታ ምሽት።", author: "ሮጀር ዘ ባርድ", stars: 4 },
+        {
+          quote: "ዘና ያለ ድባብ፣ የህንድ ሙዚቃ እና ለዓለም አቀፍ ጎብኚዎች የሰኞ ጨዋታ ምሽት።",
+          author: "ሮጀር ዘ ባርድ",
+          stars: 4,
+        },
       ],
     },
     gallery: {
@@ -302,14 +452,26 @@ export const content = {
       subtitle: `ትክክለኛ ልጥፎች ከ${business.instagram} — ለዕለታዊ ልዩ ምግቦች ይከተሉን።`,
       cta: "@radhasres2025ን ይከተሉ",
       items: [
-        { label: "የዓሳ ወጥ፣ ማሳላ እና ቲካ", image: "/images/dishes/fish-curry-masala-tikka.jpg" },
+        {
+          label: "የዓሳ ወጥ፣ ማሳላ እና ቲካ",
+          image: "/images/dishes/fish-curry-masala-tikka.jpg",
+        },
         { label: "የበግ ሮገን ጆሽ", image: "/images/dishes/mutton-rogan-josh.jpg" },
         { label: "ፓኒር ቡርጂ", image: "/images/dishes/paneer-bhurji.jpg" },
         { label: "ቺኪን ሎሊፖፕ", image: "/images/dishes/chicken-lollypop.jpg" },
         { label: "ሳሞሳ ቻት", image: "/images/dishes/samosa-chaat.jpg" },
-        { label: "የቺኪን ማንቾው ሾርባ", image: "/images/dishes/chicken-manchow-soup.jpg" },
-        { label: "ቺኪን ሆት እና ሳወር ሾርባ", image: "/images/dishes/chicken-hot-sour-soup.jpg" },
-        { label: "የደስታ ጎድጓዳ ሳህን", image: "/images/dishes/bowl-of-happiness.jpg" },
+        {
+          label: "የቺኪን ማንቾው ሾርባ",
+          image: "/images/dishes/chicken-manchow-soup.jpg",
+        },
+        {
+          label: "ቺኪን ሆት እና ሳወር ሾርባ",
+          image: "/images/dishes/chicken-hot-sour-soup.jpg",
+        },
+        {
+          label: "የደስታ ጎድጓዳ ሳህን",
+          image: "/images/dishes/bowl-of-happiness.jpg",
+        },
       ],
     },
     cta: {
@@ -325,7 +487,7 @@ export const content = {
       phoneLabel: "ስልክ",
       emailLabel: "ኢሜይል",
       hoursLabel: "የስራ ሰዓት",
-      hoursValue: "በየቀኑ · 9:00 ጠዋት – 11:00 ማታ",
+      hoursValue: "በየቀኑ · 3:00 ጠዋት – 5:00 ማታ",
       reserve: "ጠረጴዛ ያስይዙ",
     },
     footer: {
@@ -333,7 +495,12 @@ export const content = {
       navigate: "ማውጫ",
       contact: "አድራሻ",
       services: "አገልግሎቶች",
-      serviceList: ["የግል ማዕድ ቤት", "ሙሉ ባር እና የጃዝ ምሽቶች", "የንግድ ምሳ", "ማድረስ እና ውሰድ"],
+      serviceList: [
+        "የግል ማዕድ ቤት",
+        "ሙሉ ባር እና የጃዝ ምሽቶች",
+        "የንግድ ምሳ",
+        "ማድረስ እና ውሰድ",
+      ],
       rights: "መብቱ በህግ የተጠበቀ ነው።",
     },
     langToggle: "English",
@@ -360,6 +527,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
 export function useLanguage() {
   const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLanguage must be used within a LanguageProvider");
+  if (!ctx)
+    throw new Error("useLanguage must be used within a LanguageProvider");
   return ctx;
 }
