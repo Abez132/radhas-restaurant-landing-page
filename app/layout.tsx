@@ -26,7 +26,7 @@ const notoEthiopic = Noto_Sans_Ethiopic({
 });
 
 export const metadata: Metadata = {
-  title: "Radha's Indian Restaurant & Bar | Bole Japan, Addis Ababa",
+  title: "Radha's Indian Restaurant & Bar",
   description:
     "Authentic Indian cuisine in the heart of Addis Ababa. Tandoori specialties, biryani, vegetarian & vegan dishes, private dining, and a full-service bar in Bole Japan.",
   keywords: [
