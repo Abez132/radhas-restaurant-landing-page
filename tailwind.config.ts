@@ -8,22 +8,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        maroon: {
-          DEFAULT: "#AF3A0F",
-          deep: "#7A280A",
-          light: "#C94F1E",
-        },
+        // Primary — Saffron Orange: chef hat + spoon, dominant logo color
         saffron: {
           DEFAULT: "#EB6E0F",
           soft: "#F2A25C",
           deep: "#B4530A",
         },
+        // Secondary — Leaf Green: fork + ribbon banner, frames the logo
         leaf: {
           DEFAULT: "#157A22",
           deep: "#0E5A19",
           soft: "#4C9C4F",
         },
+        // Accent — Deep Maroon: "Radha's" script text, focal emphasis color
+        maroon: {
+          DEFAULT: "#AF3A0F",
+          deep: "#7A280A",
+          light: "#C94F1E",
+        },
+        // Neutral — warm dark for body text (off-charcoal)
         charcoal: "#2B2620",
+        // Background — warm ivory to complement the white logo circle
         cream: {
           DEFAULT: "#FBF6EC",
           dark: "#F1E7D3",
