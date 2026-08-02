@@ -58,15 +58,6 @@ export const content = {
       quote: "\u201cAmazing ambiance, great atmosphere and lovely food.\u201d",
       quoteSource: `— a ${business.reviewSource} guest`,
     },
-    insider: {
-      label: "Insider tips from real guests",
-      items: [
-        "International board-game night every Monday",
-        "Live jazz bar with big-screen sports evenings",
-        "Regulars recommend the Tawa Paneer & Dal Khichdi",
-        "Free valet & off-street parking on site",
-      ],
-    },
     dishes: {
       eyebrow: "Signature Dishes",
       title: "Flavors Worth the Table",
@@ -285,7 +276,7 @@ export const content = {
   am: {
     nav: {
       about: "ስለ እኛ",
-      menu: "ምናሌ",
+      menu: "ምናለ",
       whyUs: "ለምን እኛን",
       reviews: "አስተያየቶች",
       gallery: "ማዕከለ-ስዕላት",
@@ -311,15 +302,6 @@ export const content = {
       statHoursLabel: "በየቀኑ ክፍት",
       quote: "«አስደናቂ ድባብ፣ ግሩም ሁኔታ እና ጣፋጭ ምግብ።»",
       quoteSource: `— የ${business.reviewSource} እንግዳ`,
-    },
-    insider: {
-      label: "ከእውነተኛ እንግዶች የተገኙ ምክሮች",
-      items: [
-        "በየሰኞው ዓለም አቀፍ የቦርድ ጨዋታ ምሽት",
-        "ቀጥታ የጃዝ ባር ከትልቅ ስክሪን ስፖርት ምሽቶች ጋር",
-        "ደንበኞች ታዋ ፓኒር እና ዳል ኪችዲን ይመክራሉ",
-        "ነጻ ቫሌት እና የመኪና ማቆሚያ አገልግሎት",
-      ],
     },
     dishes: {
       eyebrow: "ልዩ ምግቦቻችን",
@@ -516,7 +498,7 @@ type LanguageContextValue = {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("am");
   const toggle = () => setLang((prev) => (prev === "en" ? "am" : "en"));
   return (
     <LanguageContext.Provider value={{ lang, toggle, t: content[lang] }}>
