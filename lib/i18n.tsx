@@ -29,15 +29,7 @@ export const business = {
  */
 export const content = {
   en: {
-    nav: {
-      about: "About",
-      menu: "Menu",
-      whyUs: "Why Us",
-      reviews: "Reviews",
-      gallery: "Gallery",
-      visit: "Visit",
-      reserve: "Reserve a Table",
-    },
+    nav: { about: "About", menu: "Menu", whyUs: "Why Us", reviews: "Reviews", gallery: "Gallery", visit: "Visit", reserve: "Reserve a Table" },
     hero: {
       eyebrow: "Welcome to Radha's",
       headline: "Authentic Indian Flavors in the Heart of Addis Ababa",
@@ -58,113 +50,108 @@ export const content = {
       quote: "\u201cAmazing ambiance, great atmosphere and lovely food.\u201d",
       quoteSource: `— a ${business.reviewSource} guest`,
     },
+    insider: {
+      label: "Insider tips from real guests",
+      items: [
+        "International board-game night every Monday",
+        "Live jazz bar with big-screen sports evenings",
+        "Regulars recommend the Tawa Paneer & Dal Khichdi",
+        "Free valet & off-street parking on site",
+      ],
+    },
     dishes: {
       eyebrow: "Signature Dishes",
       title: "Flavors Worth the Table",
-      footnote:
-        "A sample of what's on the table. Confirmed starting prices: Tandoori specialties from 1,599 Birr · Chicken Biryani 849 Birr · Mango Lassi 399 Birr — ask your server for the full menu.",
+      footnote: "A taste of the full menu below — tap any dish for details. Prices shown are exclusive of 5% service charge and 15% VAT.",
+      tapHint: "Tap for details",
+      viewFullMenu: "View Full Menu",
       items: [
         {
           title: "Fish Curry, Masala & Tikka",
-          tag: "Chef's Trio",
-          description:
-            "Three ways with fish — a fiery curry, a smoky masala, and char-grilled tikka, all on one table.",
+          tag: "Chef's Fish Creations",
+          description: "Three ways with fish, all on one table.",
+          fullDescription: "Fresh fish simmered in bold Indian gravies — choose the comforting, soupy richness of a classic curry or the robust, spiced intensity of masala-style, both finished with tomato, onion, and aromatic spices. The tikka alongside is boneless fish marinated in spiced yogurt with garlic, ginger, and Kashmiri chili, then grilled until smoky.",
+          price: "Curry/Masala 899 Birr · Tikka 1,049 Birr",
           image: "/images/dishes/fish-curry-masala-tikka.jpg",
         },
         {
           title: "Mutton Rogan Josh",
-          tag: "Best Seller",
-          description:
-            "Slow-braised mutton in a rich, aromatic Kashmiri red curry.",
+          tag: "Main Course Non-Veg",
+          description: "Slow-braised mutton in a rich, aromatic Kashmiri red curry.",
+          fullDescription: "A Kashmiri classic — bone-in mutton slow-cooked in a fiery red gravy infused with Kashmiri chili, fennel, and dry ginger. Aromatic, richly spicy, and deeply flavorful with every tender bite.",
+          price: "1,049 Birr",
           image: "/images/dishes/mutton-rogan-josh.jpg",
         },
         {
           title: "Paneer Bhurji",
           tag: "Vegetarian",
-          description:
-            "Scrambled paneer with onions, tomatoes, and warm spice — comfort food, done right.",
+          description: "Scrambled paneer with onions, tomatoes, and warm spice — comfort food, done right.",
+          fullDescription: "Grated paneer scrambled with onions, tomatoes, green chili, and warm ground spice — soft, homestyle, and full of comfort. Not on the printed price list we photographed; ask your server for current pricing.",
+          price: "Ask your server",
           image: "/images/dishes/paneer-bhurji.jpg",
         },
         {
           title: "Chicken Lollypop",
-          tag: "Starter Favorite",
-          description:
-            "Frenched chicken drumettes, marinated and wok-fried Indo-Chinese style.",
+          tag: "Non-Veg Chinese Starters",
+          description: "Frenched chicken wings, deep-fried and served with a spicy-tangy sauce.",
+          fullDescription: "Frenched chicken wings marinated in bold spices, deep-fried to a crisp golden finish, and served with a spicy-tangy sauce — crunchy on the outside, juicy at the core. Served 6 pieces to an order.",
+          price: "899 Birr (6 pieces)",
           image: "/images/dishes/chicken-lollypop.jpg",
         },
         {
           title: "Samosa Chaat",
-          tag: "Guest Favorite",
-          description:
-            "Crisp samosas steamed and topped with chutneys, yogurt, and pomegranate.",
+          tag: "Chat / Pakoda",
+          description: "Crushed samosas layered with tangy chutneys, yogurt, and spice.",
+          fullDescription: "Crushed samosas layered with tangy chutneys, creamy yogurt, and aromatic spices — crispy, juicy, and bursting with the street-food flavor Mumbai chaat is known for.",
+          price: "399 Birr",
           image: "/images/dishes/samosa-chaat.jpg",
         },
         {
           title: "Chicken Manchow Soup",
-          tag: "Indo-Chinese",
+          tag: "Soup",
           description: "Spiced chicken broth topped with crispy fried noodles.",
+          fullDescription: "Tender chicken and crisp vegetables simmered in a spiced, savory broth with tangy notes and a gentle kick — our Manchow-style bowl, topped with crispy fried noodles.",
+          price: "599 Birr",
           image: "/images/dishes/chicken-manchow-soup.jpg",
         },
         {
           title: "Chicken Hot & Sour Soup",
-          tag: "Indo-Chinese",
-          description:
-            "A warming broth of chicken, mushroom, and fresh chili — built for Addis evenings.",
+          tag: "Soup",
+          description: "A warming, tangy broth built for Addis evenings.",
+          fullDescription: "Tender chicken and crisp vegetables simmered in a spiced, savory broth with tangy notes and a gentle kick — the hot & sour take on the same base as our Manchow soup.",
+          price: "599 Birr",
           image: "/images/dishes/chicken-hot-sour-soup.jpg",
         },
         {
           title: "Bowl of Happiness",
-          tag: "House Special",
-          description:
-            "Our own name for it — tender kofta in a silky, cream-swirled tomato gravy.",
+          tag: "Main Course Veg",
+          description: "Our own name for our Malai Kofta — tender dumplings in a silky gravy.",
+          fullDescription: "What we call our Malai Kofta — soft vegetable dumplings simmered in a rich, creamy cashew-tomato gravy. Indulgent, mildly spiced, and enticingly luxurious, finished with a swirl of cream.",
+          price: "595 Birr",
           image: "/images/dishes/bowl-of-happiness.jpg",
         },
       ],
+    },
+    fullMenuSection: {
+      eyebrow: "The Full Menu",
+      title: "Everything on the Table",
+      note: "Transcribed from our printed menu. Shown in English only for now — Amharic translation of the complete price list is still in progress; category names below are already bilingual.",
+      priceNote: "All prices in Birr, exclusive of 5% service charge and 15% VAT.",
+      vegLabel: "Veg",
+      nonVegLabel: "Non-Veg",
     },
     whyUs: {
       eyebrow: "Why Choose Us",
       title: "Hospitality First, Always",
       items: [
-        {
-          title: "Authentic Indian Chefs",
-          description:
-            "Recipes carried from home kitchens across India, not adapted for anyone.",
-        },
-        {
-          title: "Equal Care, Both Menus",
-          description:
-            "A full vegetarian and vegan menu that gets the same attention as the rest.",
-        },
-        {
-          title: "Full Bar & Jazz Nights",
-          description:
-            "Cocktails, live music, and big-screen sports evenings at the bar.",
-        },
-        {
-          title: "Private Dining Rooms",
-          description:
-            "Intimate spaces for celebrations, diplomatic dinners, and business meetings.",
-        },
-        {
-          title: "Free Parking & Valet",
-          description:
-            "Off-street, street, and valet parking — arriving is never the hard part.",
-        },
-        {
-          title: "Wheelchair Accessible & Dog Friendly",
-          description:
-            "A dining room that welcomes everyone, four-legged guests included.",
-        },
-        {
-          title: "Free Wifi, Delivery & Takeout",
-          description:
-            "Built for the business-lunch crowd as much as the sit-down dinner.",
-        },
-        {
-          title: "Trusted by the Diplomatic Community",
-          description:
-            "A known favorite among Addis Ababa's diplomats and expatriates.",
-        },
+        { title: "Authentic Indian Chefs", description: "Recipes carried from home kitchens across India, not adapted for anyone." },
+        { title: "Equal Care, Both Menus", description: "A full vegetarian and vegan menu that gets the same attention as the rest." },
+        { title: "Full Bar & Jazz Nights", description: "Cocktails, live music, and big-screen sports evenings at the bar." },
+        { title: "Private Dining Rooms", description: "Intimate spaces for celebrations, diplomatic dinners, and business meetings." },
+        { title: "Free Parking & Valet", description: "Off-street, street, and valet parking — arriving is never the hard part." },
+        { title: "Wheelchair Accessible & Dog Friendly", description: "A dining room that welcomes everyone, four-legged guests included." },
+        { title: "Free Wifi, Delivery & Takeout", description: "Built for the business-lunch crowd as much as the sit-down dinner." },
+        { title: "Trusted by the Diplomatic Community", description: "A known favorite among Addis Ababa's diplomats and expatriates." },
       ],
     },
     reviews: {
@@ -172,40 +159,12 @@ export const content = {
       title: "What Addis Ababa Is Saying",
       subtitle: `${business.rating} average from ${business.reviewCount} ${business.reviewSource} reviews`,
       items: [
-        {
-          quote:
-            "The only Indian fine-dine restaurant in Ethiopia — and it shows in every dish.",
-          author: "Ravi K.",
-          stars: 5,
-        },
-        {
-          quote: "Amazing ambiance, great atmosphere and lovely food.",
-          author: "Kajal D.",
-          stars: 5,
-        },
-        {
-          quote:
-            "Best place for a business lunch or dinner — mouth-watering, generous portions.",
-          author: "Sandeep M.",
-          stars: 5,
-        },
-        {
-          quote:
-            "A personal dining room, dim light, and wine — dinner here feels special.",
-          author: "Sifen N.",
-          stars: 5,
-        },
-        {
-          quote: "Very good place for a family get-together, start to finish.",
-          author: "Makbel D.",
-          stars: 5,
-        },
-        {
-          quote:
-            "Laid-back, with Indian music playing and a Monday game night for the international crowd.",
-          author: "Roger the Bard",
-          stars: 4,
-        },
+        { quote: "The only Indian fine-dine restaurant in Ethiopia — and it shows in every dish.", author: "Ravi K.", stars: 5 },
+        { quote: "Amazing ambiance, great atmosphere and lovely food.", author: "Kajal D.", stars: 5 },
+        { quote: "Best place for a business lunch or dinner — mouth-watering, generous portions.", author: "Sandeep M.", stars: 5 },
+        { quote: "A personal dining room, dim light, and wine — dinner here feels special.", author: "Sifen N.", stars: 5 },
+        { quote: "Very good place for a family get-together, start to finish.", author: "Makbel D.", stars: 5 },
+        { quote: "Laid-back, with Indian music playing and a Monday game night for the international crowd.", author: "Roger the Bard", stars: 4 },
       ],
     },
     gallery: {
@@ -214,32 +173,14 @@ export const content = {
       subtitle: `Real posts from ${business.instagram} — follow along for daily specials.`,
       cta: "Follow @radhasres2025",
       items: [
-        {
-          label: "Fish Curry, Masala & Tikka",
-          image: "/images/dishes/fish-curry-masala-tikka.jpg",
-        },
-        {
-          label: "Mutton Rogan Josh",
-          image: "/images/dishes/mutton-rogan-josh.jpg",
-        },
+        { label: "Fish Curry, Masala & Tikka", image: "/images/dishes/fish-curry-masala-tikka.jpg" },
+        { label: "Mutton Rogan Josh", image: "/images/dishes/mutton-rogan-josh.jpg" },
         { label: "Paneer Bhurji", image: "/images/dishes/paneer-bhurji.jpg" },
-        {
-          label: "Chicken Lollypop",
-          image: "/images/dishes/chicken-lollypop.jpg",
-        },
+        { label: "Chicken Lollypop", image: "/images/dishes/chicken-lollypop.jpg" },
         { label: "Samosa Chaat", image: "/images/dishes/samosa-chaat.jpg" },
-        {
-          label: "Chicken Manchow Soup",
-          image: "/images/dishes/chicken-manchow-soup.jpg",
-        },
-        {
-          label: "Chicken Hot & Sour Soup",
-          image: "/images/dishes/chicken-hot-sour-soup.jpg",
-        },
-        {
-          label: "Bowl of Happiness",
-          image: "/images/dishes/bowl-of-happiness.jpg",
-        },
+        { label: "Chicken Manchow Soup", image: "/images/dishes/chicken-manchow-soup.jpg" },
+        { label: "Chicken Hot & Sour Soup", image: "/images/dishes/chicken-hot-sour-soup.jpg" },
+        { label: "Bowl of Happiness", image: "/images/dishes/bowl-of-happiness.jpg" },
       ],
     },
     cta: {
@@ -263,26 +204,13 @@ export const content = {
       navigate: "Navigate",
       contact: "Contact",
       services: "Services",
-      serviceList: [
-        "Private Dining",
-        "Full Bar & Jazz Nights",
-        "Business Lunches",
-        "Delivery & Takeout",
-      ],
+      serviceList: ["Private Dining", "Full Bar & Jazz Nights", "Business Lunches", "Delivery & Takeout"],
       rights: "All rights reserved.",
     },
     langToggle: "አማርኛ",
   },
   am: {
-    nav: {
-      about: "ስለ እኛ",
-      menu: "ምናለ",
-      whyUs: "ለምን እኛን",
-      reviews: "አስተያየቶች",
-      gallery: "ማዕከለ-ስዕላት",
-      visit: "ይጎብኙን",
-      reserve: "ጠረጴዛ ያስይዙ",
-    },
+    nav: { about: "ስለ እኛ", menu: "ምናለ", whyUs: "ለምን እኛን", reviews: "አስተያየቶች", gallery: "ማዕከለ-ስዕላት", visit: "ይጎብኙን", reserve: "ጠረጴዛ ያስይዙ" },
     hero: {
       eyebrow: "ወደ ራድሃስ እንኳን በደህና መጡ",
       headline: "ኦሪጅናል የህንድ ጣዕም በአዲስ አበባ ልብ ውስጥ",
@@ -303,100 +231,108 @@ export const content = {
       quote: "«አስደናቂ ድባብ፣ ግሩም ሁኔታ እና ጣፋጭ ምግብ።»",
       quoteSource: `— የ${business.reviewSource} እንግዳ`,
     },
+    insider: {
+      label: "ከእውነተኛ እንግዶች የተገኙ ምክሮች",
+      items: [
+        "በየሰኞው ዓለም አቀፍ የቦርድ ጨዋታ ምሽት",
+        "ቀጥታ የጃዝ ባር ከትልቅ ስክሪን ስፖርት ምሽቶች ጋር",
+        "ደንበኞች ታዋ ፓኒር እና ዳል ኪችዲን ይመክራሉ",
+        "ነጻ ቫሌት እና የመኪና ማቆሚያ አገልግሎት",
+      ],
+    },
     dishes: {
       eyebrow: "ልዩ ምግቦቻችን",
       title: "ጠረጴዛው የሚገባው ጣዕም",
-      footnote:
-        "ከምናሌያችን ናሙና። የተረጋገጡ መነሻ ዋጋዎች፦ የታንዱር ልዩ ምግቦች ከ1,599 ብር · የዶሮ ቢርያኒ 849 ብር · ማንጎ ላሲ 399 ብር — ሙሉ ምናሌውን ከአስተናጋጅዎ ይጠይቁ።",
+      footnote: "ከሙሉ ምናሌያችን ናሙና — ዝርዝር ለማየት ምግቡን ይንኩ። ዋጋዎቹ 5% የአገልግሎት ክፍያ እና 15% ቫት አይጨምሩም።",
+      tapHint: "ዝርዝር ለማየት ይንኩ",
+      viewFullMenu: "ሙሉ ምናሌ ይመልከቱ",
       items: [
         {
           title: "የዓሳ ወጥ፣ ማሳላ እና ቲካ",
-          tag: "የሼፍ ሶስትዮሽ",
-          description:
-            "በሶስት መንገድ የተዘጋጀ ዓሳ — ትኩስ ወጥ፣ ጭስ ጣዕም ያለው ማሳላ እና በእሳት የተጠበሰ ቲካ በአንድ ጠረጴዛ ላይ።",
+          tag: "የሼፍ የዓሳ ልዩ ምግቦች",
+          description: "በሶስት መንገድ የተዘጋጀ ዓሳ በአንድ ጠረጴዛ ላይ።",
+          fullDescription: "ትኩስ ዓሳ በህንድ ወጥ ውስጥ የበሰለ — ክላሲክ ወጥ ወይም የበለጸገ ማሳላ ዘይቤ፣ ከቲማቲም፣ ሽንኩርት እና ቅመማ ቅመም ጋር። ቲካው በቅመም እርጎ፣ ነጭ ሽንኩርት፣ ዝንጅብል እና የካሽሚር በርበሬ ተቀምሞ የተጠበሰ ነው።",
+          price: "ወጥ/ማሳላ 899 ብር · ቲካ 1,049 ብር",
           image: "/images/dishes/fish-curry-masala-tikka.jpg",
         },
         {
           title: "የበግ ሮገን ጆሽ",
-          tag: "ተመራጭ",
-          description: "በዝግታ የበሰለ የበግ ስጋ በበለጸገ ጣዕም ባለው የካሽሚር ቀይ ወጥ ውስጥ።",
+          tag: "ዋና ምግብ (ስጋ)",
+          description: "በዝግታ የበሰለ የበግ ስጋ በበለጸገ የካሽሚር ቀይ ወጥ ውስጥ።",
+          fullDescription: "የካሽሚር ክላሲክ ምግብ — በአጥንት ላይ ያለ የበግ ስጋ በካሽሚር በርበሬ፣ በሽንብራ እና በደረቅ ዝንጅብል በበለጸገ ቀይ ወጥ ውስጥ በዝግታ የበሰለ፣ ጥሩ መዓዛ እና ጣዕም ያለው።",
+          price: "1,049 ብር",
           image: "/images/dishes/mutton-rogan-josh.jpg",
         },
         {
           title: "ፓኒር ቡርጂ",
           tag: "የአትክልት ምግብ",
-          description:
-            "የተፈጨ ፓኒር ከሽንኩርት፣ ከቲማቲም እና ከቅመማ ቅመም ጋር — ትክክለኛ የምቾት ምግብ።",
+          description: "የተፈጨ ፓኒር ከሽንኩርት፣ ከቲማቲም እና ከቅመማ ቅመም ጋር።",
+          fullDescription: "የተፈጨ ፓኒር ከሽንኩርት፣ ከቲማቲም፣ ከአረንጓዴ በርበሬ እና ከቅመማ ቅመም ጋር የተዘጋጀ — ለስላሳ የቤት ውስጥ ጣዕም። በፎቶ ባነሳነው የዋጋ ዝርዝር ላይ አልተካተተም — የአሁኑን ዋጋ ከአስተናጋጅዎ ይጠይቁ።",
+          price: "ከአስተናጋጅ ይጠይቁ",
           image: "/images/dishes/paneer-bhurji.jpg",
         },
         {
           title: "ቺኪን ሎሊፖፕ",
-          tag: "የመክፈቻ ምርጫ",
-          description: "የተቀመመ እና በህንድ-ቻይናዊ ስልት የተጠበሰ የዶሮ ክንፍ።",
+          tag: "ህንድ-ቻይናዊ መክፈቻዎች",
+          description: "የተጠበሰ የዶሮ ክንፍ ከቅመም-ጎምዛዛ ሾርባ ጋር።",
+          fullDescription: "የተቀመመ የዶሮ ክንፍ በጥልቅ ዘይት ወርቃማ እስኪሆን ተጠብሶ፣ ከቅመም-ጎምዛዛ ሾርባ ጋር የሚቀርብ — በውጭ ጥርት ያለ በውስጥ ጭማቂ ያለው። 6 ቁራጭ ይቀርባል።",
+          price: "899 ብር (6 ቁራጭ)",
           image: "/images/dishes/chicken-lollypop.jpg",
         },
         {
           title: "ሳሞሳ ቻት",
-          tag: "የደንበኞች ምርጫ",
-          description: "በእንፋሎት የተጋገሩ ሳሞሳዎች በቺትኒ፣ በእርጎ እና በሮማን የተጨመሩ።",
+          tag: "ቻት / ፓኮዳ",
+          description: "የተፈጨ ሳሞሳ በቺትኒ፣ በእርጎ እና በቅመም የተለበጠ።",
+          fullDescription: "የተፈጨ ሳሞሳ በጣፋጭ ቺትኒ፣ በክሬም እርጎ እና በቅመማ ቅመም የተለበጠ — ጥርት ያለ፣ ጭማቂ እና እንደ ሙምባይ የመንገድ ምግብ ጣዕም የተሞላ።",
+          price: "399 ብር",
           image: "/images/dishes/samosa-chaat.jpg",
         },
         {
           title: "የቺኪን ማንቾው ሾርባ",
-          tag: "ህንድ-ቻይናዊ",
+          tag: "ሾርባ",
           description: "የተቀመመ የዶሮ ሾርባ በተጠበሰ ኑድል የተሞላ።",
+          fullDescription: "ዶሮ እና ትኩስ አትክልት በቅመም ሾርባ ውስጥ የበሰለ፣ በጎምዛዛ ጣዕም እና ትንሽ ስለት ያለው — በተጠበሰ ኑድል የተሞላ የማንቾው ዘይቤ።",
+          price: "599 ብር",
           image: "/images/dishes/chicken-manchow-soup.jpg",
         },
         {
           title: "ቺኪን ሆት እና ሳወር ሾርባ",
-          tag: "ህንድ-ቻይናዊ",
-          description: "ዶሮ፣ እንጉዳይ እና ትኩስ በርበሬ ያለው ሙቅ ሾርባ — ለአዲስ አበባ ምሽቶች ተስማሚ።",
+          tag: "ሾርባ",
+          description: "ለአዲስ አበባ ምሽቶች ተስማሚ የሆነ ሙቅ እና ጎምዛዛ ሾርባ።",
+          fullDescription: "ዶሮ እና ትኩስ አትክልት በቅመም ሾርባ ውስጥ የበሰለ፣ በጎምዛዛ ጣዕም እና ትንሽ ስለት ያለው — ከማንቾው ሾርባችን ጋር ተመሳሳይ መሠረት ያለው ትኩስና ጎምዛዛ ዘይቤ።",
+          price: "599 ብር",
           image: "/images/dishes/chicken-hot-sour-soup.jpg",
         },
         {
           title: "የደስታ ጎድጓዳ ሳህን",
-          tag: "የቤት ልዩ ምግብ",
-          description: "የራሳችን ስያሜ — ለስላሳ ኮፍታ በክሬም በተሞላ የቲማቲም ወጥ ውስጥ።",
+          tag: "ዋና ምግብ (አትክልት)",
+          description: "የእኛ ማላይ ኮፍታ የራሳችን ስያሜ — ለስላሳ ኳሶች በለስላሳ ወጥ ውስጥ።",
+          fullDescription: "የእኛ ማላይ ኮፍታ ብለን የምንጠራው — ለስላሳ የአትክልት ኳሶች በካሼው-ቲማቲም ክሬም ወጥ ውስጥ የበሰሉ። ልዩ ጣዕም ያለው፣ በቀስታ የተቀመመ እና በክሬም የተጨመረ።",
+          price: "595 ብር",
           image: "/images/dishes/bowl-of-happiness.jpg",
         },
       ],
+    },
+    fullMenuSection: {
+      eyebrow: "ሙሉ ምናሌ",
+      title: "በጠረጴዛው ላይ ያለው ሁሉ",
+      note: "ከምናሌያችን በቀጥታ የተገለበጠ። ለጊዜው በእንግሊዝኛ ብቻ ቀርቧል — የሙሉ ዋጋ ዝርዝሩ የአማርኛ ትርጉም በሂደት ላይ ነው፤ ከታች ያሉት የምድብ ስሞች ግን አስቀድሞ በሁለቱም ቋንቋዎች ቀርበዋል።",
+      priceNote: "ሁሉም ዋጋዎች በብር ሲሆኑ 5% የአገልግሎት ክፍያ እና 15% ቫት አይጨምሩም።",
+      vegLabel: "አትክልት",
+      nonVegLabel: "ስጋ",
     },
     whyUs: {
       eyebrow: "ለምን እኛን ይምረጡ",
       title: "እንግዳ አቀባበል ሁልጊዜ ቅድሚያ",
       items: [
-        {
-          title: "ኦሪጅናል የህንድ ሼፎች",
-          description: "ከህንድ የቤት ኩሽናዎች የመጡ የምግብ አዘገጃጀቶች፣ ላልተለወጠ ጣዕም።",
-        },
-        {
-          title: "እኩል እንክብካቤ ለሁለቱም ምናሌዎች",
-          description: "ሙሉ የአትክልትና የቬጋን ምናሌ ልክ እንደ ሌላው ትኩረት ያገኛል።",
-        },
-        {
-          title: "ሙሉ ባር እና የጃዝ ምሽቶች",
-          description: "ኮክቴሎች፣ ቀጥታ ሙዚቃ እና በትልቅ ስክሪን የስፖርት ምሽቶች።",
-        },
-        {
-          title: "የግል ማዕድ ቤቶች",
-          description: "ለበዓላት፣ ለዲፕሎማሲያዊ እራት እና ለንግድ ስብሰባዎች የተመቻቹ ቦታዎች።",
-        },
-        {
-          title: "ነጻ የመኪና ማቆሚያ እና ቫሌት",
-          description: "የውጪ፣ የመንገድ ዳር እና የቫሌት ማቆሚያ — መድረስ አስቸጋሪ አይደለም።",
-        },
-        {
-          title: "ተሽከርካሪ ወንበር ምቹ እና ውሻ ተቀባይ",
-          description: "ሁሉንም እንግዳ የሚቀበል ምግብ ቤት፣ የቤት እንስሳትን ጨምሮ።",
-        },
-        {
-          title: "ነጻ ዋይፋይ፣ ማድረስ እና ውሰድ",
-          description: "ለንግድ ምሳ ሰዓት እንደ እራት ራሱ ተስማሚ።",
-        },
-        {
-          title: "በዲፕሎማሲያዊ ማህበረሰብ የታመነ",
-          description: "በአዲስ አበባ ዲፕሎማቶች እና የውጪ ዜጎች ዘንድ የታወቀ ተመራጭ።",
-        },
+        { title: "ኦሪጅናል የህንድ ሼፎች", description: "ከህንድ የቤት ኩሽናዎች የመጡ የምግብ አዘገጃጀቶች፣ ላልተለወጠ ጣዕም።" },
+        { title: "እኩል እንክብካቤ ለሁለቱም ምናሌዎች", description: "ሙሉ የአትክልትና የቬጋን ምናሌ ልክ እንደ ሌላው ትኩረት ያገኛል።" },
+        { title: "ሙሉ ባር እና የጃዝ ምሽቶች", description: "ኮክቴሎች፣ ቀጥታ ሙዚቃ እና በትልቅ ስክሪን የስፖርት ምሽቶች።" },
+        { title: "የግል ማዕድ ቤቶች", description: "ለበዓላት፣ ለዲፕሎማሲያዊ እራት እና ለንግድ ስብሰባዎች የተመቻቹ ቦታዎች።" },
+        { title: "ነጻ የመኪና ማቆሚያ እና ቫሌት", description: "የውጪ፣ የመንገድ ዳር እና የቫሌት ማቆሚያ — መድረስ አስቸጋሪ አይደለም።" },
+        { title: "ተሽከርካሪ ወንበር ምቹ እና ውሻ ተቀባይ", description: "ሁሉንም እንግዳ የሚቀበል ምግብ ቤት፣ የቤት እንስሳትን ጨምሮ።" },
+        { title: "ነጻ ዋይፋይ፣ ማድረስ እና ውሰድ", description: "ለንግድ ምሳ ሰዓት እንደ እራት ራሱ ተስማሚ።" },
+        { title: "በዲፕሎማሲያዊ ማህበረሰብ የታመነ", description: "በአዲስ አበባ ዲፕሎማቶች እና የውጪ ዜጎች ዘንድ የታወቀ ተመራጭ።" },
       ],
     },
     reviews: {
@@ -404,28 +340,12 @@ export const content = {
       title: "አዲስ አበባ ምን ትላለች",
       subtitle: `${business.rating} አማካይ ከ${business.reviewCount} የ${business.reviewSource} አስተያየቶች`,
       items: [
-        {
-          quote: "በኢትዮጵያ ብቸኛው እውነተኛ የህንድ ምግብ ቤት — ይህም በእያንዳንዱ ምግብ ውስጥ ይታያል።",
-          author: "ራቪ ኬ.",
-          stars: 5,
-        },
+        { quote: "በኢትዮጵያ ብቸኛው እውነተኛ የህንድ ምግብ ቤት — ይህም በእያንዳንዱ ምግብ ውስጥ ይታያል።", author: "ራቪ ኬ.", stars: 5 },
         { quote: "አስደናቂ ድባብ፣ ግሩም ሁኔታ እና ጣፋጭ ምግብ።", author: "ካጃል ዲ.", stars: 5 },
-        {
-          quote: "ለንግድ ምሳ ወይም እራት ምርጥ ቦታ — ጣፋጭ እና በቂ መጠን ያለው ምግብ።",
-          author: "ሳንዲፕ ኤም.",
-          stars: 5,
-        },
-        {
-          quote: "የግል ማዕድ ቤት፣ ደብዛዛ ብርሃን እና ወይን — እራቱ ልዩ ስሜት ይሰጣል።",
-          author: "ሲፈን ኤን.",
-          stars: 5,
-        },
+        { quote: "ለንግድ ምሳ ወይም እራት ምርጥ ቦታ — ጣፋጭ እና በቂ መጠን ያለው ምግብ።", author: "ሳንዲፕ ኤም.", stars: 5 },
+        { quote: "የግል ማዕድ ቤት፣ ደብዛዛ ብርሃን እና ወይን — እራቱ ልዩ ስሜት ይሰጣል።", author: "ሲፈን ኤን.", stars: 5 },
         { quote: "ለቤተሰብ መሰባሰቢያ በጣም ጥሩ ቦታ ነው።", author: "መቅበል ዲ.", stars: 5 },
-        {
-          quote: "ዘና ያለ ድባብ፣ የህንድ ሙዚቃ እና ለዓለም አቀፍ ጎብኚዎች የሰኞ ጨዋታ ምሽት።",
-          author: "ሮጀር ዘ ባርድ",
-          stars: 4,
-        },
+        { quote: "ዘና ያለ ድባብ፣ የህንድ ሙዚቃ እና ለዓለም አቀፍ ጎብኚዎች የሰኞ ጨዋታ ምሽት።", author: "ሮጀር ዘ ባርድ", stars: 4 },
       ],
     },
     gallery: {
@@ -434,26 +354,14 @@ export const content = {
       subtitle: `ትክክለኛ ልጥፎች ከ${business.instagram} — ለዕለታዊ ልዩ ምግቦች ይከተሉን።`,
       cta: "@radhasres2025ን ይከተሉ",
       items: [
-        {
-          label: "የዓሳ ወጥ፣ ማሳላ እና ቲካ",
-          image: "/images/dishes/fish-curry-masala-tikka.jpg",
-        },
+        { label: "የዓሳ ወጥ፣ ማሳላ እና ቲካ", image: "/images/dishes/fish-curry-masala-tikka.jpg" },
         { label: "የበግ ሮገን ጆሽ", image: "/images/dishes/mutton-rogan-josh.jpg" },
         { label: "ፓኒር ቡርጂ", image: "/images/dishes/paneer-bhurji.jpg" },
         { label: "ቺኪን ሎሊፖፕ", image: "/images/dishes/chicken-lollypop.jpg" },
         { label: "ሳሞሳ ቻት", image: "/images/dishes/samosa-chaat.jpg" },
-        {
-          label: "የቺኪን ማንቾው ሾርባ",
-          image: "/images/dishes/chicken-manchow-soup.jpg",
-        },
-        {
-          label: "ቺኪን ሆት እና ሳወር ሾርባ",
-          image: "/images/dishes/chicken-hot-sour-soup.jpg",
-        },
-        {
-          label: "የደስታ ጎድጓዳ ሳህን",
-          image: "/images/dishes/bowl-of-happiness.jpg",
-        },
+        { label: "የቺኪን ማንቾው ሾርባ", image: "/images/dishes/chicken-manchow-soup.jpg" },
+        { label: "ቺኪን ሆት እና ሳወር ሾርባ", image: "/images/dishes/chicken-hot-sour-soup.jpg" },
+        { label: "የደስታ ጎድጓዳ ሳህን", image: "/images/dishes/bowl-of-happiness.jpg" },
       ],
     },
     cta: {
@@ -469,7 +377,7 @@ export const content = {
       phoneLabel: "ስልክ",
       emailLabel: "ኢሜይል",
       hoursLabel: "የስራ ሰዓት",
-      hoursValue: "በየቀኑ · 3:00 ጠዋት – 5:00 ማታ",
+      hoursValue: "በየቀኑ · 9:00 ጠዋት – 11:00 ማታ",
       reserve: "ጠረጴዛ ያስይዙ",
     },
     footer: {
@@ -477,12 +385,7 @@ export const content = {
       navigate: "ማውጫ",
       contact: "አድራሻ",
       services: "አገልግሎቶች",
-      serviceList: [
-        "የግል ማዕድ ቤት",
-        "ሙሉ ባር እና የጃዝ ምሽቶች",
-        "የንግድ ምሳ",
-        "ማድረስ እና ውሰድ",
-      ],
+      serviceList: ["የግል ማዕድ ቤት", "ሙሉ ባር እና የጃዝ ምሽቶች", "የንግድ ምሳ", "ማድረስ እና ውሰድ"],
       rights: "መብቱ በህግ የተጠበቀ ነው።",
     },
     langToggle: "English",
@@ -509,7 +412,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
 export function useLanguage() {
   const ctx = useContext(LanguageContext);
-  if (!ctx)
-    throw new Error("useLanguage must be used within a LanguageProvider");
+  if (!ctx) throw new Error("useLanguage must be used within a LanguageProvider");
   return ctx;
 }

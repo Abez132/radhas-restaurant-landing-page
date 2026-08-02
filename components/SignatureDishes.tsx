@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Reveal from "./Reveal";
 import { KalkaDivider } from "./Ornaments";
+import DishModal, { DishDetail } from "./DishModal";
 import { useLanguage } from "@/lib/i18n";
 
 function Steam() {
@@ -18,6 +20,7 @@ function Steam() {
 export default function SignatureDishes() {
   const { t, lang } = useLanguage();
   const ethiopic = lang === "am" ? "font-ethiopic" : "";
+  const [selected, setSelected] = useState<DishDetail | null>(null);
 
   return (
     <section id="menu" className="bg-white py-24 md:py-32">
@@ -31,7 +34,18 @@ export default function SignatureDishes() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {t.dishes.items.map((dish, i) => (
             <Reveal key={dish.title} delay={(i % 4) as 0 | 1 | 2 | 3 | 4}>
-              <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-saffron/20 bg-cream shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-saffron hover:shadow-[0_20px_40px_-15px_rgba(175,58,15,0.3)]">
+              <button
+                onClick={() =>
+                  setSelected({
+                    title: dish.title,
+                    tag: dish.tag,
+                    fullDescription: dish.fullDescription,
+                    price: dish.price,
+                    image: dish.image,
+                  })
+                }
+                className="group relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-saffron/20 bg-cream text-left shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-saffron hover:shadow-[0_20px_40px_-15px_rgba(175,58,15,0.3)]"
+              >
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Steam />
                   <Image
@@ -49,17 +63,28 @@ export default function SignatureDishes() {
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className={`font-display text-lg text-maroon-deep ${ethiopic}`}>{dish.title}</h3>
                   <p className={`mt-2 text-sm leading-relaxed text-charcoal/75 ${ethiopic}`}>{dish.description}</p>
-                  <div className="mt-4 h-px w-10 bg-saffron/50 transition-all duration-500 group-hover:w-16" />
+                  <div className="mt-4 flex items-center justify-between">
+                    <div className="h-px w-10 bg-saffron/50 transition-all duration-500 group-hover:w-16" />
+                    <span className={`text-[11px] uppercase tracking-wider text-saffron-deep/70 ${ethiopic}`}>{t.dishes.tapHint}</span>
+                  </div>
                 </div>
-              </article>
+              </button>
             </Reveal>
           ))}
         </div>
 
-        <Reveal className="mt-14 text-center" delay={4}>
+        {/* <Reveal className="mt-14 text-center" delay={4}>
           <p className={`mx-auto max-w-2xl text-sm text-charcoal/70 ${ethiopic}`}>{t.dishes.footnote}</p>
-        </Reveal>
+          <a
+            href="#full-menu"
+            className={`mt-6 inline-flex items-center gap-2 rounded-full border border-maroon/30 px-6 py-2.5 text-sm font-semibold text-maroon transition-colors hover:bg-maroon hover:text-white ${ethiopic}`}
+          >
+            {t.dishes.viewFullMenu}
+          </a>
+        </Reveal> */}
       </div>
+
+      <DishModal dish={selected} onClose={() => setSelected(null)} />
     </section>
   );
 }

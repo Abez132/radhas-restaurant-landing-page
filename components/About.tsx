@@ -13,6 +13,12 @@ export default function About() {
     <section
       id="about"
       className="relative overflow-hidden bg-cream py-24 md:py-32"
+      style={{
+        backgroundImage:
+          'linear-gradient(rgba(255, 247, 233, 0.9), rgba(255, 247, 233, 0.95)), url("/images/dishes/all.png")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div
         className="mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-2 md:items-center"
@@ -61,7 +67,16 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={2}>
-          <div className="relative mx-auto flex aspect-[4/5] max-w-md items-center justify-center rounded-[2rem] border border-saffron/30 bg-gradient-to-br from-maroon to-maroon-deep p-10 shadow-xl">
+          <div
+            className="relative mx-auto flex aspect-[4/5] max-w-md items-center justify-center rounded-[2rem] border border-saffron/30 bg-gradient-to-br from-maroon to-maroon-deep p-10 shadow-xl"
+            style={{
+              backgroundImage:
+                'linear-gradient(rgba(0, 0, 0, 0.09), rgba(32, 5, 0, 0.09)), url("/images/dishes/all.png")',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
             <Paisley className="absolute -top-6 -left-6 h-24 w-20 text-saffron/40" />
             <Paisley className="absolute -bottom-6 -right-6 h-28 w-24 rotate-180 text-leaf/30" />
             <span className="absolute -top-5 right-6 h-16 w-16 overflow-hidden rounded-full ring-4 ring-cream shadow-lg">
@@ -73,19 +88,7 @@ export default function About() {
                 className="object-cover"
               />
             </span>
-            <div className="text-center">
-              <p
-                className={`font-display text-2xl italic text-saffron-soft ${ethiopic}`}
-              >
-                {t.about.quote}
-              </p>
-              <KalkaDivider className="mt-6" />
-              <p
-                className={`mt-6 font-body text-sm tracking-wide text-cream/80 ${ethiopic}`}
-              >
-                {t.about.quoteSource}
-              </p>
-            </div>
+            
           </div>
         </Reveal>
       </div>
