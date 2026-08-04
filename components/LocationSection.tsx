@@ -10,7 +10,7 @@ export default function LocationSection() {
 
   return (
     <section id="visit" className="bg-cream-dark py-14 md:py-20">
-      <div className="mx-auto max-w-6xl px-6" lang={lang}>
+      <div className="mx-auto max-w-7xl px-6" lang={lang}>
         <Reveal className="text-center">
           <p className={`eyebrow ${ethiopic}`}>{t.visit.eyebrow}</p>
           <h2 className={`mt-4 font-display text-3xl text-maroon-deep sm:text-4xl ${ethiopic}`}>{t.visit.title}</h2>
