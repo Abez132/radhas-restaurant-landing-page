@@ -9,7 +9,7 @@ export default function LocationSection() {
   const ethiopic = lang === "am" ? "font-ethiopic" : "";
 
   return (
-    <section id="visit" className="bg-cream-dark py-24 md:py-32">
+    <section id="visit" className="bg-cream-dark py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6" lang={lang}>
         <Reveal className="text-center">
           <p className={`eyebrow ${ethiopic}`}>{t.visit.eyebrow}</p>
@@ -17,7 +17,7 @@ export default function LocationSection() {
           <KalkaDivider className="mt-6" />
         </Reveal>
 
-        <div className="mt-14 grid gap-8 overflow-hidden rounded-2xl border border-saffron/20 bg-white shadow-lg md:grid-cols-5">
+        <div className="mt-10 grid gap-8 overflow-hidden rounded-2xl border border-saffron/20 bg-white shadow-lg md:grid-cols-5">
           <Reveal className="flex flex-col justify-center gap-5 p-8 md:col-span-2 md:p-10" delay={1}>
             <div>
               <p className={`text-xs font-semibold uppercase tracking-wider text-saffron-deep ${ethiopic}`}>{t.visit.addressLabel}</p>

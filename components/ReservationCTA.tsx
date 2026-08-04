@@ -9,7 +9,7 @@ export default function ReservationCTA() {
   const ethiopic = lang === "am" ? "font-ethiopic" : "";
 
   return (
-    <section className="relative overflow-hidden bg-maroon py-20">
+    <section className="relative overflow-hidden bg-maroon py-12 md:py-16">
       <PaisleyField />
       <Reveal className="relative mx-auto flex max-w-3xl flex-col items-center px-6 text-center" as="div">
         <div lang={lang} className="flex flex-col items-center">

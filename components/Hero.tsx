@@ -42,7 +42,7 @@ export default function Hero() {
         </div>
 
         <p
-          className={`mt-6 max-w-xl text-balance text-base text-cream/90 animate-fade-in-up sm:text-lg ${ethiopic}`}
+          className={`mt-6 max-w-xl text-balance text-base text-white animate-fade-in-up sm:text-lg ${ethiopic}`}
           style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}
         >
           {t.hero.sub}
@@ -54,7 +54,7 @@ export default function Hero() {
         >
           <a
             href="#visit"
-            className={`w-full rounded-full bg-saffron px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-transform duration-300 hover:scale-[1.03] hover:bg-saffron-deep sm:w-auto ${ethiopic}`}
+            className={`w-full rounded-full bg-saffron px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-transform duration-300 hover:scale-[1.09] hover:bg-saffron sm:w-auto ${ethiopic}`}
           >
             {t.hero.cta1}
           </a>

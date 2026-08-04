@@ -10,7 +10,7 @@ export default function Gallery() {
   const ethiopic = lang === "am" ? "font-ethiopic" : "";
 
   return (
-    <section id="gallery" className="bg-white py-24 md:py-32">
+    <section id="gallery" className="bg-white py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6" lang={lang}>
         <Reveal className="text-center">
           <p className={`eyebrow ${ethiopic}`}>{t.gallery.eyebrow}</p>
@@ -19,7 +19,7 @@ export default function Gallery() {
           <p className={`mt-5 text-sm text-charcoal/60 ${ethiopic}`}>{t.gallery.subtitle}</p>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {t.gallery.items.map((item, i) => (
             <Reveal key={item.label} delay={(i % 4) as 0 | 1 | 2 | 3 | 4}>
               <a

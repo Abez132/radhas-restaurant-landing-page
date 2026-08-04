@@ -154,6 +154,9 @@ export const content = {
         { title: "Trusted by the Diplomatic Community", description: "A known favorite among Addis Ababa's diplomats and expatriates." },
       ],
     },
+    simp: {
+      disc: "Authentic flavors, thoughtful service, and a dining room that feels warm on arrival and memorable on the way out.",
+    },
     reviews: {
       eyebrow: "In Our Guests' Words",
       title: "What Addis Ababa Is Saying",
@@ -210,10 +213,10 @@ export const content = {
     langToggle: "አማርኛ",
   },
   am: {
-    nav: { about: "ስለ እኛ", menu: "ምናለ", whyUs: "ለምን እኛን", reviews: "አስተያየቶች", gallery: "ማዕከለ-ስዕላት", visit: "ይጎብኙን", reserve: "ጠረጴዛ ያስይዙ" },
+    nav: { about: "ስለ እኛ", menu: "ምናለ", whyUs: "ለምን እኛን", reviews: "አስተያየቶች", gallery: "ፎቶዎች", visit: "ይጎብኙን", reserve: "ጠረጴዛ ያስይዙ" },
     hero: {
       eyebrow: "ወደ ራድሃስ እንኳን በደህና መጡ",
-      headline: "ኦሪጅናል የህንድ ጣዕም በአዲስ አበባ ልብ ውስጥ",
+      headline: "ኦሪጅናል የህንድ ጣዕም በአዲስ አበባ መሃል ውስጥ",
       sub: "በታንዱር የተጠበሱ ልዩ ምግቦች፣ በእጅ የተፈጩ ቅመሞች እና ሙሉ አገልግሎት ያለው ባር — ራድሃስ ደንበኞቿን ከጅምሩ በለመደችው ሙቀት ታስተናግዳለች።",
       cta1: "ጠረጴዛ ያስይዙ",
       cta2: "ምናሌያችንን ይመልከቱ",
@@ -242,7 +245,7 @@ export const content = {
     },
     dishes: {
       eyebrow: "ልዩ ምግቦቻችን",
-      title: "ጠረጴዛው የሚገባው ጣዕም",
+      title: "የሚገባዋት ጣዕም",
       footnote: "ከሙሉ ምናሌያችን ናሙና — ዝርዝር ለማየት ምግቡን ይንኩ። ዋጋዎቹ 5% የአገልግሎት ክፍያ እና 15% ቫት አይጨምሩም።",
       tapHint: "ዝርዝር ለማየት ይንኩ",
       viewFullMenu: "ሙሉ ምናሌ ይመልከቱ",
@@ -325,16 +328,20 @@ export const content = {
       eyebrow: "ለምን እኛን ይምረጡ",
       title: "እንግዳ አቀባበል ሁልጊዜ ቅድሚያ",
       items: [
-        { title: "ኦሪጅናል የህንድ ሼፎች", description: "ከህንድ የቤት ኩሽናዎች የመጡ የምግብ አዘገጃጀቶች፣ ላልተለወጠ ጣዕም።" },
-        { title: "እኩል እንክብካቤ ለሁለቱም ምናሌዎች", description: "ሙሉ የአትክልትና የቬጋን ምናሌ ልክ እንደ ሌላው ትኩረት ያገኛል።" },
+        { title: "ትክክለኛ የህንድ ሼፎች", description: "ከህንድ የቤት ኩሽናዎች የመጡ የምግብ አዘገጃጀቶች፣ ላልተለወጠ ጣዕም።" },
+        { title: "እኩል እንክብካቤ", description: "ሙሉ የአትክልትና የቬጋን ምናሌ ልክ እንደ ሌላው ትኩረት ያገኛል።" },
         { title: "ሙሉ ባር እና የጃዝ ምሽቶች", description: "ኮክቴሎች፣ ቀጥታ ሙዚቃ እና በትልቅ ስክሪን የስፖርት ምሽቶች።" },
         { title: "የግል ማዕድ ቤቶች", description: "ለበዓላት፣ ለዲፕሎማሲያዊ እራት እና ለንግድ ስብሰባዎች የተመቻቹ ቦታዎች።" },
         { title: "ነጻ የመኪና ማቆሚያ እና ቫሌት", description: "የውጪ፣ የመንገድ ዳር እና የቫሌት ማቆሚያ — መድረስ አስቸጋሪ አይደለም።" },
-        { title: "ተሽከርካሪ ወንበር ምቹ እና ውሻ ተቀባይ", description: "ሁሉንም እንግዳ የሚቀበል ምግብ ቤት፣ የቤት እንስሳትን ጨምሮ።" },
-        { title: "ነጻ ዋይፋይ፣ ማድረስ እና ውሰድ", description: "ለንግድ ምሳ ሰዓት እንደ እራት ራሱ ተስማሚ።" },
+        { title: "ለአካል ጉዳተኛ ምቹ እና ውሻ ተቀባይ", description: "ሁሉንም እንግዳ የሚቀበል ምግብ ቤት፣ የቤት እንስሳትን ጨምሮ።" },
+        { title: "ነጻ ዋይፋይ፣ ዴሊቨሪ እና ቴካዌ ጋር", description: "ለንግድ ምሳ ሰዓት እንደ እራት ራሱ ተስማሚ።" },
         { title: "በዲፕሎማሲያዊ ማህበረሰብ የታመነ", description: "በአዲስ አበባ ዲፕሎማቶች እና የውጪ ዜጎች ዘንድ የታወቀ ተመራጭ።" },
       ],
     },
+    simp: {
+      disc: "እውነተኛ ጣዕሞች፣ አሳቢነት የተሞላበት አገልግሎት፣ እንዲሁም ሲገቡ ሞቅ ያለ ስሜት የሚፈጥርና ሲወጡም የማይረሳ ትዝታ የሚተው የመመገቢያ ስፍራ።",
+    },
+
     reviews: {
       eyebrow: "በእንግዶቻችን ቃል",
       title: "አዲስ አበባ ምን ትላለች",

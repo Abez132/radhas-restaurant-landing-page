@@ -9,10 +9,22 @@ import { useLanguage } from "@/lib/i18n";
 
 function Steam() {
   return (
-    <span className="pointer-events-none absolute -top-1 left-1/2 z-10 flex -translate-x-1/2 gap-1" aria-hidden="true">
-      <span className="h-4 w-1 rounded-full bg-white/70 animate-steam-rise" style={{ animationDelay: "0s" }} />
-      <span className="h-4 w-1 rounded-full bg-white/70 animate-steam-rise" style={{ animationDelay: "0.9s" }} />
-      <span className="h-4 w-1 rounded-full bg-white/70 animate-steam-rise" style={{ animationDelay: "1.8s" }} />
+    <span
+      className="pointer-events-none absolute -top-1 left-1/2 z-10 flex -translate-x-1/2 gap-1"
+      aria-hidden="true"
+    >
+      <span
+        className="h-4 w-1 rounded-full bg-white/70 animate-steam-rise"
+        style={{ animationDelay: "0s" }}
+      />
+      <span
+        className="h-4 w-1 rounded-full bg-white/70 animate-steam-rise"
+        style={{ animationDelay: "0.9s" }}
+      />
+      <span
+        className="h-4 w-1 rounded-full bg-white/70 animate-steam-rise"
+        style={{ animationDelay: "1.8s" }}
+      />
     </span>
   );
 }
@@ -23,15 +35,19 @@ export default function SignatureDishes() {
   const [selected, setSelected] = useState<DishDetail | null>(null);
 
   return (
-    <section id="menu" className="bg-white py-24 md:py-32">
+    <section id="menu" className="bg-white py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6" lang={lang}>
         <Reveal className="text-center">
           <p className={`eyebrow ${ethiopic}`}>{t.dishes.eyebrow}</p>
-          <h2 className={`mt-4 font-display text-3xl text-maroon-deep sm:text-4xl ${ethiopic}`}>{t.dishes.title}</h2>
+          <h2
+            className={`mt-4 font-display text-3xl text-maroon-deep sm:text-4xl ${ethiopic}`}
+          >
+            {t.dishes.title}
+          </h2>
           <KalkaDivider className="mt-6" />
         </Reveal>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {t.dishes.items.map((dish, i) => (
             <Reveal key={dish.title} delay={(i % 4) as 0 | 1 | 2 | 3 | 4}>
               <button
@@ -56,16 +72,30 @@ export default function SignatureDishes() {
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-black/0" />
-                  <span className={`absolute left-3 top-3 inline-block rounded-full bg-leaf px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white ${ethiopic}`}>
+                  <span
+                    className={`absolute left-3 top-3 inline-block rounded-full bg-leaf px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white ${ethiopic}`}
+                  >
                     {dish.tag}
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
-                  <h3 className={`font-display text-lg text-maroon-deep ${ethiopic}`}>{dish.title}</h3>
-                  <p className={`mt-2 text-sm leading-relaxed text-charcoal/75 ${ethiopic}`}>{dish.description}</p>
+                  <h3
+                    className={`font-display text-lg text-maroon-deep ${ethiopic}`}
+                  >
+                    {dish.title}
+                  </h3>
+                  <p
+                    className={`mt-2 text-sm leading-relaxed text-charcoal/75 ${ethiopic}`}
+                  >
+                    {dish.description}
+                  </p>
                   <div className="mt-4 flex items-center justify-between">
                     <div className="h-px w-10 bg-saffron/50 transition-all duration-500 group-hover:w-16" />
-                    <span className={`text-[11px] uppercase tracking-wider text-saffron-deep/70 ${ethiopic}`}>{t.dishes.tapHint}</span>
+                    <span
+                      className={`text-[11px] uppercase tracking-wider text-saffron-deep/70 ${ethiopic}`}
+                    >
+                      {t.dishes.tapHint}
+                    </span>
                   </div>
                 </div>
               </button>

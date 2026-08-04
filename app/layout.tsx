@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins, Noto_Sans_Ethiopic } from "next/font/google";
+import { Playfair_Display, Poppins, Noto_Serif_Ethiopic, Noto_Sans_Ethiopic } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 
@@ -18,10 +18,17 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const notoEthiopic = Noto_Sans_Ethiopic({
+const notoSerifEthiopic = Noto_Serif_Ethiopic({
   subsets: ["ethiopic"],
-  weight: ["400", "500"],
-  variable: "--font-noto-ethiopic",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-noto-serif-ethiopic",
+  display: "swap",
+});
+
+const notoSansEthiopic = Noto_Sans_Ethiopic({
+  subsets: ["ethiopic"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-noto-sans-ethiopic",
   display: "swap",
 });
 
@@ -53,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${poppins.variable} ${notoEthiopic.variable} font-body`}
+        className={`${playfair.variable} ${poppins.variable} ${notoSerifEthiopic.variable} ${notoSansEthiopic.variable} font-body`}
       >
         <LanguageProvider>{children}</LanguageProvider>
       </body>

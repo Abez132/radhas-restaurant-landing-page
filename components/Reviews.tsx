@@ -9,7 +9,7 @@ export default function Reviews() {
   const ethiopic = lang === "am" ? "font-ethiopic" : "";
 
   return (
-    <section id="reviews" className="bg-maroon-deep py-24 md:py-32">
+    <section id="reviews" className="bg-maroon-deep py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6" lang={lang}>
         <Reveal className="text-center">
           <p className={`eyebrow text-saffron-soft ${ethiopic}`}>{t.reviews.eyebrow}</p>
@@ -18,7 +18,7 @@ export default function Reviews() {
           <p className={`mt-5 text-sm text-cream/70 ${ethiopic}`}>{t.reviews.subtitle}</p>
         </Reveal>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {t.reviews.items.map((r, i) => (
             <Reveal key={i} delay={(i % 4) as 0 | 1 | 2 | 3 | 4}>
               <figure className="h-full rounded-2xl border border-saffron/20 bg-white/[0.04] p-7 backdrop-blur-sm transition-colors duration-300 hover:border-saffron/50">

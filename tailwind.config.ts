@@ -30,9 +30,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-playfair)", "serif"],
-        body: ["var(--font-poppins)", "sans-serif"],
-        ethiopic: ["var(--font-noto-ethiopic)", "sans-serif"],
+        display: ["var(--font-playfair)", "var(--font-noto-serif-ethiopic)", "Nyala", "Abyssinica SIL", "serif"],
+        body: ["var(--font-poppins)", "var(--font-noto-serif-ethiopic)", "Nyala", "sans-serif"],
+        ethiopic: ["var(--font-noto-serif-ethiopic)", "Nyala", "Abyssinica SIL", "serif"],
+        "ethiopic-sans": ["var(--font-noto-sans-ethiopic)", "sans-serif"],
       },
       keyframes: {
         "fade-in-up": {

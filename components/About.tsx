@@ -12,7 +12,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-cream py-24 md:py-32"
+      className="relative overflow-hidden bg-cream py-14 md:py-20"
       style={{
         backgroundImage:
           'linear-gradient(rgba(255, 247, 233, 0.9), rgba(255, 247, 233, 0.95)), url("/images/dishes/all.png")',
